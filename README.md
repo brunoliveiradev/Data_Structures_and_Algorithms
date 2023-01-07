@@ -4,17 +4,11 @@ This repository contains a collection of coding challenges and problems from var
 The challenges and problems are separated by difficulty and each solution includes a brief description of the problem and my thought process in solving it.
 
 
-**Note:** This repository and work are still in progress. The challenges and problems will be organized by topic in the future.
+**Note:** This repository and work are still in progress, one challege at a time. The challenges and problems will be organized by topic in the future.
 
-## Table of Contents
+# [![LeetCode](https://img.shields.io/badge/-LeetCode-da8200?style=for-the-badge&logo=LeetCode&logoColor=ffa116&labelColor=black)](https://leetcode.com/brunoliveiradev/)
+# [![AlgoExpert](https://img.shields.io/badge/-AlgoExpert-626ee3?style=for-the-badge&logo=atom&logoColor=brigthwhite&labelColor=626ee3)](https://www.algoexpert.io/data-structures)
 
-- [Arrays](#arrays)
-- [Strings](#strings)
-- [Linked Lists](#linked-lists)
-- [Trees](#trees)
-- [Sorting](#sorting)
-- [Dynamic Programming](#dynamic-programming)
-- [Miscellaneous](#miscellaneous)
 
 ## License
 
