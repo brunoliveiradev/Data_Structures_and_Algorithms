@@ -8,13 +8,24 @@ public class RichestCustomerWealth {
      * Given an m x n integer grid accounts where accounts[i][j] is the amount of money the i-th customer
      * has in the j-th bank. Sum the amount of money of each costumer in all their bank accounts and return
      * the maximum sum element in array.
+     * Time Complexity: O(m x n)
      * @param accounts
      * @return maximum element in array after sum of each [i] in [j].
      */
     private static int maximumWealth(int[][] accounts) {
+        int maxWealthSoFar = 0;
 
+        for (int[] customer : accounts) {
+            int currentCustomerWealth = 0;
 
-        return 0;
+            for(int bank : customer) {
+                currentCustomerWealth += bank;
+            }
+
+            maxWealthSoFar = Math.max(maxWealthSoFar, currentCustomerWealth);
+        }
+
+        return maxWealthSoFar;
     }
 
     public static void main(String[] args) {
