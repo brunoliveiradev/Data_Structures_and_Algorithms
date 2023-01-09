@@ -6,9 +6,11 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class RunningSum {
+
     /**
-     * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
-     * Return the running sum of nums -- challenge problem by Leetcode
+     * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i])
+     * @param nums
+     * @return int - the running sum of num
      */
     private static int[] runningSum(int[] nums) {
         int[] results =  new int[nums.length];
