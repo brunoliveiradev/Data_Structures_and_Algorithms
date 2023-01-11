@@ -9,7 +9,7 @@ public class RichestCustomerWealth {
      * has in the j-th bank. Sum the amount of money of each costumer in all their bank accounts and return
      * the maximum sum element in array.
      * Time Complexity: O(m x n)
-     * @param accounts
+     * @param accounts accounts[][]
      * @return maximum element in array after sum of each [i] in [j].
      */
     private static int maximumWealth(int[][] accounts) {
@@ -21,10 +21,8 @@ public class RichestCustomerWealth {
             for(int bank : customer) {
                 currentCustomerWealth += bank;
             }
-
             maxWealthSoFar = Math.max(maxWealthSoFar, currentCustomerWealth);
         }
-
         return maxWealthSoFar;
     }
 
