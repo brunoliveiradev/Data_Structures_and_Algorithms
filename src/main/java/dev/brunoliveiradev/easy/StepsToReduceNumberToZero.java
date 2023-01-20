@@ -22,6 +22,7 @@ public class StepsToReduceNumberToZero {
             return -1;
         }
 
+        // Also, the variables isEven, numDividedByTwo and numSubtractedOne are not necessary, I put only for better reading.
         while (num != 0) {
             boolean isEven = num % 2 == 0;
             int numDividedByTwo = num / 2;
