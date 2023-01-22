@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+// Time Complexity: O(n) | Space: O(1) -- where n is the length of the array
 public class ValidSubsequence {
 
     public static void main(String[] args) {
@@ -49,4 +50,17 @@ public class ValidSubsequence {
         return sequenceCurrentIndex == sequence.size();
     }
 
+    private static boolean isValidSubsequenceV2(List<Integer> array, List<Integer> sequence) {
+        int sequenceCurrentIndex = 0;
+
+        for (int arrayCurrentElement : array) {
+            if (sequenceCurrentIndex == sequence.size()) {
+                break;
+            }
+            if (sequence.get(sequenceCurrentIndex).equals(arrayCurrentElement)) {
+                sequenceCurrentIndex++;
+            }
+        }
+        return sequenceCurrentIndex == sequence.size();
+    }
 }
