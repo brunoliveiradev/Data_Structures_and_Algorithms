@@ -20,8 +20,14 @@ public class SortedSquaredArray {
         System.out.println(Arrays.toString(results));
     }
 
-    // Is not the optimal solution: Time complexity: O(n log n) | Space Complexity: O(n) - where n is lenght of the input array
-    public static int[] sortedSquaredArrayV1(int[] array) {
+    // Time complexity: O(n log n) | Space Complexity: O(n) - where n is lenght of the input array
+
+    /**
+     * Return the sorted squared array
+     * @param array int[]
+     * @return sortedSquaredArray
+     */
+    public static int[] sortedSquaredArray(int[] array) {
 
         int[] tempArray = new int[array.length];
 
@@ -34,7 +40,8 @@ public class SortedSquaredArray {
     }
 
     // O(n) time | O(n) space - where n is the length of the input array
-    public static int[] sortedSquaredArray(int[] array) {
+    // Note: this only works if the input array is ordered
+    public static int[] sortedSquaredArrayV2(int[] array) {
         int[] sortedSquares = new int[array.length];
 
         int smallestValueIndex = 0;
