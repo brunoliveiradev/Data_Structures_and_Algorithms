@@ -2,6 +2,7 @@ package dev.brunoliveiradev.techniques;
 
 import dev.brunoliveiradev.easy.SortedSquaredArray;
 import dev.brunoliveiradev.easy.TwoNumberSum;
+import dev.brunoliveiradev.easy.ValidSubsequence;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +38,8 @@ public class TwoPointers {
      * For example: "abcdcba", or "racecar".
      *
      * @param input String
-     * @apiNote Time complexity: O(n) | Space Complexity: O(1)
      * @return Return true if a given string is a palindrome, false otherwise.
+     * @apiNote Time complexity: O(n) | Space Complexity: O(1)
      */
     private static boolean isPalindrome(String input) {
         int left = 0;
@@ -162,5 +163,28 @@ public class TwoPointers {
         }
     }
 
+    /**
+     * Given two strings subsequence and word, return true if subsequence is a subsequence of word,
+     * or false otherwise. We can use two pointers to solve this in linear time.
+     *
+     * @param subsequence String
+     * @param word        String
+     * @apiNote Time Complexity O(n) | Space Complexity O(1)
+     * @see ValidSubsequence
+     * @return boolean - true or false
+     */
+    private static boolean isSubsequence(String subsequence, String word) {
+        int pointerSub = 0;
+        int pointerWord = 0;
+
+        while (pointerSub < subsequence.length() && pointerWord < word.length()) {
+            if (subsequence.charAt(pointerSub) == word.charAt(pointerWord)) {
+                pointerSub++;
+            }
+            pointerWord++;
+        }
+
+        return pointerSub == subsequence.length();
+    }
 
 }
