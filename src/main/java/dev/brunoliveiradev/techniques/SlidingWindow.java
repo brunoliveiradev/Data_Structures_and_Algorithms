@@ -50,7 +50,7 @@ public class SlidingWindow {
      * find the length of the longest subarray whose sum is less than or equal to k.
      * @param nums int[]
      * @param k int
-     * @apiNote Time Complexity:  | Space Complexity:
+     * @apiNote Time Complexity: O(n) | Space Complexity: O(1) - where n is the length of nums
      * @return subarray whose sum is less than or equal to k.
      */
     private static int findLength(int[] nums, int k) {
