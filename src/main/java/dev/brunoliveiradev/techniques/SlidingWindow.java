@@ -59,11 +59,22 @@ public class SlidingWindow {
         int left = 0;
         int answer = 0;
 
+        // At each number, will add the number to the current window's sum
+        for (int right = 0; right < nums.length; right++) {
+            current += nums[right];
 
+            // While the constraint is broken, remove the elements from the left and increment
+            while (current > k) {
+                current -= nums[left];
+                left++;
+            }
+            // Updates the answer with the maximum length found.
+            // Given a subarray starting at left and ending at right, the length is right - left + 1
+            answer = Math.max(answer, right - left + 1);
+        }
 
-        return 0;
+        return answer;
     }
-
 
 
 }
