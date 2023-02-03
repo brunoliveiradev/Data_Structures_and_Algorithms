@@ -144,7 +144,7 @@ public class SlidingWindow {
             for (int right = 0; right < nums.length; right++) {
                 current *= nums[right];
                 // While the constraint is broken, remove the elements from the current window
-                while (current >= k) {
+                while (left <= right && current >= k) {
                     current /= nums[left];
                     left++;
                 }
