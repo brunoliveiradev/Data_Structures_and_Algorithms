@@ -207,5 +207,33 @@ public class SlidingWindow {
             return answer;
         }
 
+        /**
+         * Given an integer array nums and an integer k,
+         * find the sum of the subarray with the largest sum whose length is k.
+         *
+         * @param nums int[]
+         * @param k    int
+         * @return int sum of subarray with the largest sum whose length is k
+         * @apiNote Time complexity: O(n); Space complexity: O(1) - where n is the length of nums
+         */
+        private static int findBestSubarray(int[] nums, int k) {
+            // build a window of length k
+            int current = 0;
+
+            // sum of the first window
+            for (int i = 0; i < k; i++) {
+                current += nums[i];
+            }
+
+            // iterate over the rest of the windows
+            int answer = current;
+            for (int i = 0; i < nums.length; i++) {
+                // i-k = previous element, i = next element
+                current += nums[i] - nums[i - k];
+                answer = Math.max(answer, current);
+            }
+
+            return answer;
+        }
     }
 }
