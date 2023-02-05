@@ -157,4 +157,55 @@ public class SlidingWindow {
 
     }
 
+
+    /**
+     * Sometimes you will need a fixed subarray length.
+     * To build the initial window (from 0 to k - 1), you can either
+     * build it ouside of the main loop or you can factor the logic
+     * inside your main loop to only consider the window for the answer
+     * once it reaches size k.
+     */
+    static class fixedWindowSize {
+        // first approach
+        private static int pseudoCodeV1(int[] array, int k) {
+            int current = 0; // or some data type to track the window
+            int answer = 0;
+
+            //build the first window
+            for (int i = 0; i < k - 1; i++) {
+                // Do something with curr or other variables to build first window
+            }
+
+            // answer variable, might be equal to curr here depending on the problem
+            answer += current;
+
+            for (int j = 0; j < array.length; j++) {
+                //  Add arr[i] to window
+                //  Remove arr[i - k] from window
+                //  Update ans
+            }
+            return answer;
+        }
+
+        // Second approach
+        private static int pseudoCodeV2(int[] array, int k) {
+            int current = 0; // or some data type to track the window
+            int answer = 0; // answer variable
+
+            for (int i = 0; i < array.length; i++) {
+                if (i >= k) {
+                    answer++; // here you should update answer
+                    current -= array[i - k]; // Remove arr[i - k] from window
+                }
+                current += array[i];
+            }
+
+            answer += current; // update the answer;
+
+            //Alternatively, you could do something like return max(ans, curr)
+            // if the problem is asking for a maximum value and curr is tracking that.
+            return answer;
+        }
+
+    }
 }
