@@ -2,8 +2,38 @@ package dev.brunoliveiradev.easy;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class TournamentWinner {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of competitions:");
+        int numberOfCompetitions = scanner.nextInt();
+        ArrayList<ArrayList<String>> competitions = new ArrayList<>(numberOfCompetitions);
+
+        ArrayList<Integer> results = new ArrayList<>(numberOfCompetitions);
+        System.out.println("Enter the teams and results:");
+
+        for (int i = 0; i < numberOfCompetitions; i++) {
+            ArrayList<String> competition = new ArrayList<>(2);
+            System.out.println("Enter the home team:");
+            competition.add(scanner.next());
+
+            System.out.println("Enter the away team:");
+            competition.add(scanner.next());
+
+            System.out.println("Enter the result (0 for home team win, 1 for away team win):");
+            int result = scanner.nextInt();
+
+            competitions.add(competition);
+            results.add(result);
+        }
+
+        String winner = TournamentWinner.tournamentWinner(competitions, results);
+        System.out.println("The winner of the tournament is: " + winner);
+    }
 
     /**
      * Returns the winner of the tournament, the winner of the tournament
