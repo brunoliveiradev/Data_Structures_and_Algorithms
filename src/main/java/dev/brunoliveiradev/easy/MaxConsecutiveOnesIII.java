@@ -11,7 +11,6 @@ public class MaxConsecutiveOnesIII {
         int n = sc.nextInt();
 
         int[] nums = new int[n];
-        System.out.println("Enter the elements of the array 'nums': ");
 
         for (int i = 0; i < n; i++) {
             System.out.printf("Enter the value for element %d: ", i + 1);
