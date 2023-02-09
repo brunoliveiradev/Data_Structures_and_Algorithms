@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.easy;
+package dev.brunoliveiradev.medium;
 
 import java.util.Scanner;
 
