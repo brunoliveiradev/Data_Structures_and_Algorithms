@@ -23,7 +23,12 @@ public class PrefixSum {
         for (int i = 1; i < nums.length - 1; i++) {
             prefix[i] = nums[i] + prefix[prefix.length - 1];
         }
+    }
 
+    public boolean[] answerQueries(int[] nums, int[][] queries, int limit) {
+        //code here
+
+        return new boolean[]{false};
     }
 
 
