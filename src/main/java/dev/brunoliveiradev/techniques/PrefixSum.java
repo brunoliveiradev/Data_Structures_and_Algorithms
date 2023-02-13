@@ -59,5 +59,36 @@ public class PrefixSum {
         return answer;
     }
 
+    /**
+     * Given an integer array, find the number of ways to split the array into two parts
+     * so that the first section has a sum greater than or equal to the sum of the second section.
+     * The second section should have at least one number.
+     *
+     * @param num int[] array
+     * @return int - number ways to split into two parts
+     */
+    public int waysToSplitArray(int[] num) {
+        // create a new array to hold the first value
+        long[] prefix = new long[num.length];
+        prefix[0] = num[0];
+
+        // iterate through the rest of the array
+        for (int i = 1; i < num.length; i++) {
+            prefix[i] = num[i] + prefix[i - 1];
+        }
+
+        // iterate through the all the possible splits
+        int answer = 0;
+        for (int i = 0; i < num.length; i++) {
+            long leftSection = prefix[i];
+            long rightSection = prefix[num.length - 1] - prefix[i]; // sum all the elements - prefix
+
+            // constraint condition
+            if (leftSection >= rightSection) {
+                answer++;
+            }
+        }
+        return answer;
+    }
 
 }
