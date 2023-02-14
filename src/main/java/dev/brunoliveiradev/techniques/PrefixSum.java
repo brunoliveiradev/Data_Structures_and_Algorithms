@@ -91,4 +91,28 @@ public class PrefixSum {
         return answer;
     }
 
+    // Space complexity improved to O(1) while still leveraging the idea of a prefix sum by
+    // simply calculating leftSection on the fly.
+    public int waysToSplitArraySpaceImproved(int[] nums) {
+        // create a new array to hold the first value
+        int answer = 0;
+        long leftSection = 0;
+        long total = 0;
+
+        // iterate through the rest of the array
+        for (int num : nums) {
+            total += num;
+        }
+
+        // iterate through the all the possible splits
+        for (int i = 0; i < nums.length - 1; i++) {
+            leftSection += nums[i]; //calculate the left section on the fly
+            long rightSection = total - leftSection;
+            // constraint condition
+            if (leftSection >= rightSection) {
+                answer++;
+            }
+        }
+        return answer;
+    }
 }
