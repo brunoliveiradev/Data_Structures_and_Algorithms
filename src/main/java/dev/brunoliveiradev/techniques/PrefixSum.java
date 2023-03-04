@@ -1,11 +1,14 @@
 package dev.brunoliveiradev.techniques;
 
+import dev.brunoliveiradev.easy.RunningSum;
+
 /**
  * Is a technique that can be used with  integer arrays.
  * The idea is to create an array 'PREFIX' where 'prefix[i]' is the sum of all elements
  * up to index 'i' (inclusive).
  *
  * @apiNote Usually, it only costs O(n) to build but allows all future subarray queries to be O(1).
+ * @see RunningSum
  */
 public class PrefixSum {
 

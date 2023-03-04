@@ -1,5 +1,7 @@
 package dev.brunoliveiradev.techniques;
 
+import dev.brunoliveiradev.medium.MaxConsecutiveOnesIII;
+
 /**
  * Sliding window is another common approach to solving problems related to arrays.
  * Like two pointers, sliding windows work the same with arrays and strings - the important thing is
@@ -7,7 +9,7 @@ package dev.brunoliveiradev.techniques;
  * This will be focusing on arrays. However, you can swap every instance of
  * "array" with "string" and it will make sense, all the logical is identical for strings.
  *
- * @see TwoPointers
+ * @see MaxConsecutiveOnesIII
  */
 public class SlidingWindow {
 
