@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.medium;
+package dev.brunoliveiradev.slidingWindow.medium;
 
 import java.util.Scanner;
 

@@ -28,6 +28,7 @@ public class MiddleLinkedList {
      * Second and my favorite Approach: Using the LinkedList to solve this, without using ArrayList,
      * using two pointers to track the middle.
      * || Time complexity: O(n) | Space Complexity: O(1)
+     *
      * @param head - LinkedList
      * @return middleNode
      */
@@ -35,14 +36,12 @@ public class MiddleLinkedList {
         ListNode middle = head;
         ListNode end = head;
 
-        while(end != null && end.next != null) {
+        while (end != null && end.next != null) {
             middle = middle.next;
             end = end.next.next;
         }
         return middle;
     }
-
-
 
     public static class ListNode {
         int val;

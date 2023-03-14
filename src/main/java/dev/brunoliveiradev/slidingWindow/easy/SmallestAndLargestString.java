@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.easy;
+package dev.brunoliveiradev.slidingWindow.easy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

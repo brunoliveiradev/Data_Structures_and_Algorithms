@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.twoPointers;
+package dev.brunoliveiradev.twoPointers.easy;
 
 import java.util.Scanner;
 

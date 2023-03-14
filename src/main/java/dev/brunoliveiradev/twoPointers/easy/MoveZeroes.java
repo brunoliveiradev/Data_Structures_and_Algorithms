@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.twoPointers;
+package dev.brunoliveiradev.twoPointers.easy;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -23,6 +23,7 @@ public class MoveZeroes {
 
     /**
      * Moves the zeroes to the last positions in the array
+     *
      * @param nums int array
      * @apiNote Time Complexity: O(n) - where n is the length of the input array nums
      * | Space Complexity: O(1)
@@ -51,6 +52,7 @@ public class MoveZeroes {
 
     /**
      * Moves the zeroes to the last positions in the array
+     *
      * @param nums int array
      * @apiNote Time Complexity: O(n) - where n is the length of the input array nums
      * | Space Complexity: O(1)
@@ -69,7 +71,7 @@ public class MoveZeroes {
         }
     }
 
-    private static void swap(int[] nums, int left, int right){
+    private static void swap(int[] nums, int left, int right) {
         int temp = nums[left];
         nums[left] = nums[right];
         nums[right] = temp;

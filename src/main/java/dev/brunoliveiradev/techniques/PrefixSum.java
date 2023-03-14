@@ -1,6 +1,6 @@
 package dev.brunoliveiradev.techniques;
 
-import dev.brunoliveiradev.easy.RunningSum;
+import dev.brunoliveiradev.prefixSum.easy.RunningSum;
 
 /**
  * Is a technique that can be used with  integer arrays.

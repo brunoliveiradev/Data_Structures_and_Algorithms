@@ -1,8 +1,8 @@
 package dev.brunoliveiradev.techniques;
 
-import dev.brunoliveiradev.easy.SortedSquaredArray;
-import dev.brunoliveiradev.easy.TwoNumberSum;
-import dev.brunoliveiradev.easy.ValidSubsequence;
+import dev.brunoliveiradev.hashing.easy.TwoNumberSum;
+import dev.brunoliveiradev.twoPointers.easy.SortedSquaredArray;
+import dev.brunoliveiradev.twoPointers.easy.ValidSubsequence;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -169,9 +169,9 @@ public class TwoPointers {
      *
      * @param subsequence String
      * @param word        String
+     * @return boolean - true or false
      * @apiNote Time Complexity O(n) | Space Complexity O(1)
      * @see ValidSubsequence
-     * @return boolean - true or false
      */
     private static boolean isSubsequence(String subsequence, String word) {
         int pointerSub = 0;

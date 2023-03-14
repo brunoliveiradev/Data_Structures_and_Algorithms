@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.easy;
+package dev.brunoliveiradev.hashing.easy;
 
 import java.util.ArrayList;
 import java.util.List;

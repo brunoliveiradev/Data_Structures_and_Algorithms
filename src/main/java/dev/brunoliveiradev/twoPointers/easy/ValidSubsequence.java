@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.easy;
+package dev.brunoliveiradev.twoPointers.easy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,8 @@ public class ValidSubsequence {
 
     /**
      * Given two non-empty arrays of integers, return true if the second array is a subsequence of the first one.
-     * @param array List of Integers
+     *
+     * @param array    List of Integers
      * @param sequence List of Integers
      * @return boolean - true or false
      */

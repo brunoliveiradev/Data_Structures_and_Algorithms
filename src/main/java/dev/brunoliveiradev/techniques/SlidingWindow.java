@@ -1,6 +1,6 @@
 package dev.brunoliveiradev.techniques;
 
-import dev.brunoliveiradev.medium.MaxConsecutiveOnesIII;
+import dev.brunoliveiradev.slidingWindow.medium.MaxConsecutiveOnesIII;
 
 /**
  * Sliding window is another common approach to solving problems related to arrays.
