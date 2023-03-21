@@ -11,12 +11,11 @@ public class MaxCostWithEqualSubstring {
         for (int i = 0; i < s.length(); i++) {
             costToChange = Math.abs(s.charAt(i) - t.charAt(i));
 
-            if(costToChange <= maxCost){
+            if (costToChange <= maxCost) {
                 currentCost = maxCost - costToChange;
             } else {
                 currentCost--;
             }
-
             maxChange = Math.max(currentCost, maxChange);
         }
         return maxChange;
