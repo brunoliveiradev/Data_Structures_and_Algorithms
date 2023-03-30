@@ -15,7 +15,10 @@ public class FindTheHighestAltitude {
      *
      * @param gain int argument
      * @return int - the highest altitude of a point
-     * @apiNote Time and Space Complexity: O(N) - where N is the length of the input array
+     * @apiNote Time Complexity: O(N) - where N is the length of the input array
+     * <p>
+     * Space Complexity: O(1) - constant space - this is because the function only uses
+     * a constant amount of extra space to store the highest altitude and the current altitude, regardless of the size of the input array.
      * @implNote The highest altitude is the maximum value of the current altitude. Used prefix sum approach to solve.
      */
     public static int largestAltitude(int[] gain) {
