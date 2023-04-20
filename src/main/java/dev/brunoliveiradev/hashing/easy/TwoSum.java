@@ -44,8 +44,8 @@ public class TwoSum {
      * @param nums   int[]
      * @param target int
      * @return int[] - indices position
-     * @apiNote Time Complexity: O(n) | Space Complexity: O(n) -
-     * We traverse the list containing n elements only once.
+     * @apiNote Time Complexity: O(n) | Space Complexity: O(n)
+     * @implNote We traverse the list containing n elements only once.
      * You may assume that each input would have exactly one solution, and you may not use the same element twice.
      */
     public static int[] twoSum(int[] nums, int target) {
