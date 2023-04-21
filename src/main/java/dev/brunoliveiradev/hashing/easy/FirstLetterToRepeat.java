@@ -7,10 +7,10 @@ public class FirstLetterToRepeat {
 
     public static void main(String[] args) {
         String firstExample = "leetcode";
-        System.out.println("The first letter to repeat is: " + repeatedCharacter(firstExample));
+        System.out.println("Example 1: leetcode. The first letter to repeat is: " + repeatedCharacter(firstExample));
 
         String secondExample = "abccbaacz";
-        System.out.println("The first letter to repeat is: " + repeatedCharacter(secondExample));
+        System.out.println("Example 2: abccbaacz. The first letter to repeat is: " + repeatedCharacter(secondExample));
 
     }
 
