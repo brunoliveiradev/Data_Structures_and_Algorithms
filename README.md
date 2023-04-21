@@ -19,16 +19,16 @@ Bellow you will find:
 
 ## Solutions by Approach Category
 
-| Approach Category | Package Path                                                                                                                                                                                               | Level  |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| Techniques        | [**All Techniques explained with examples**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/techniques) | All    |
-| Algorithms        | [**Algorithms**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/easy)                                   | Easy   |
-| Hashing           | [**Hashing Easy**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/hashing/easy)                         | Easy   |
-| Prefix Sum        | [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/prefixSum/easy)                         | Easy   |
-| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                 | Easy   |
-| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/slidingWindow/medium)               | Medium |
-| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                   | Easy   |
-| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/13d071fe9eb82eec0db72525d21c5570dcaee1eb/src/main/java/dev/brunoliveiradev/slidingWindow/medium)                 | Medium |
+| Approach Category | Package Path                                                                                                                                                             | Level  |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| Techniques        | [**All Techniques explained with examples**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques) | All    |
+| Algorithms        | [**Algorithms**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/easy)                                   | Easy   |
+| Hashing           | [**Hashing Easy**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing/easy)                         | Easy   |
+| Prefix Sum        | [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/prefixSum/easy)                         | Easy   |
+| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                 | Easy   |
+| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/medium)               | Medium |
+| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                   | Easy   |
+| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/medium)                 | Medium |
 
 
 ## License
