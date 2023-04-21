@@ -13,7 +13,7 @@ Bellow you will find:
   * [License](#license)
   * [Contribution](#contribution)
   * [Main Sources](#main-sources)
-  * [Disclaimer](#span-stylecolorffa116-disclaimerspan-span-stylecolorblackall-resources-in-this-repository-are-used-for-academic-purposes-only-the-solutions-provided-in-this-repository-are-not-intended-to-be-used-in-production-systems-or-as-a-substitute-for-professional-advice-span)
+  * [Disclaimer](#span-stylecolorffa116disclaimerspan-span-stylecolorblackall-resources-in-this-repository-are-used-for-academic-purposes-only-the-solutions-provided-in-this-repository-are-not-intended-to-be-used-in-production-systems-or-as-a-substitute-for-professional-advice-span)
 <!-- TOC -->
 
 
