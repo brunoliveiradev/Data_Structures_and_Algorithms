@@ -20,6 +20,39 @@ public class Counting {
         System.out.println("Example 1 - given s: 'eceba', k: 2, the expceted answer is: 3. Got answer: " + findLongestSubstring("eceba", 2));
     }
 
+
+    /**
+     * Find the number of subarrays that have a sum exactly equal to k
+     *
+     * @param nums only has positive numbers
+     * @param k    sum of the subarray
+     * @return the number of subarrays that have a sum exactly equal to k
+     */
+    public static int countingNumbersOfSubarraysWithExactConstraint(int[] nums, int k) {
+        Map<Integer, Integer> counts = new HashMap<>();
+        int currSum = 0; // track whatever the constraint metric is, in this case is the sum of the subarray
+        int answer = 0;
+
+        // iterate over the input
+        // check the hash map for curr minus the constraint. Add this frequency to the answer
+        // increment the frequency of the current value in the hash map
+        // update the curr
+        for (int num : nums) {
+            currSum += num;
+            if (currSum == k) {
+                answer++;
+            }
+
+            if (counts.containsKey(currSum - k)) {
+                answer += counts.get(currSum - k);
+            }
+
+            counts.put(currSum, counts.getOrDefault(currSum, 0) + 1);
+        }
+        return answer;
+    }
+
+
     /**
      * Given a string s and an integer k, return the length of the longest substring that
      * contains at most k distinct characters.
