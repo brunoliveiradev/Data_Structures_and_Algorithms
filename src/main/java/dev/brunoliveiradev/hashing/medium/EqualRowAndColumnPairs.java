@@ -5,6 +5,12 @@ import java.util.Map;
 
 public class EqualRowAndColumnPairs {
 
+    /**
+     * We were given a 2D grid (a square matrix), and we needed to find out how many rows in this grid are exactly the same as some column.
+     * @param grid 2D integer array matrix
+     * @return how many rows in this grid are exactly the same as some column
+     * @apiNote Time Compelxity: O(n^2) | Space Compelxity: O(n)
+     */
     public static int equalPairs(int[][] grid) {
         Map<String, Integer> frequencyRow = new HashMap<>();
         Map<String, Integer> frequencyColumn = new HashMap<>();
