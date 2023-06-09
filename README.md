@@ -14,11 +14,13 @@ to stay tuned and come back often for fresh and exciting brain-teasers!
 
 Bellow you will find:
 <!-- TOC -->
-  * [Solutions by Approach Category](#solutions-by-approach-category)
-  * [License](#license)
-  * [Contribution](#contribution)
-  * [Main Sources](#main-sources)
-  * [Disclaimer](#span-stylecolorffa116disclaimerspan)
+
+* [Solutions by Approach Category](#solutions-by-approach-category)
+* [License](#license)
+* [Contribution](#contribution)
+* [Main Sources](#main-sources)
+* [Disclaimer](#disclaimer)
+
 <!-- TOC -->
 
 ## Solutions by Approach Category
@@ -50,7 +52,7 @@ I will review the pull request and merge it if it meets the standards of the rep
 
 <br>
 
-#### <span style="color:#ffa116">*Disclaimer*:</span>
+##### Disclaimer:
 
 <span style="color:black"> This repository is purely academic and intended for educational purposes only. 
 The solutions provided in this repository are not intended to be used in production systems or as a substitute for professional advice. 
