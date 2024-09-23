@@ -21,7 +21,7 @@ public class ReverseString {
      * @param s char[]
      * @apiNote Time Compelxity: O(n) | Space Complexity: O(1)
      */
-    private static void reverseString(char[] s) {
+    public static void reverseString(char[] s) {
         int left = 0;
         int right = s.length - 1;
 
@@ -34,5 +34,6 @@ public class ReverseString {
             s[right] = temp;
             right--;
         }
+        System.out.println("Reversed: " + new String(s));
     }
 }
