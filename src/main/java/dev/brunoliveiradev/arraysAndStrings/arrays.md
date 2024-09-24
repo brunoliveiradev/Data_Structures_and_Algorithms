@@ -83,8 +83,8 @@
 Note that because both arrays and strings are sequences (a string is an array of characters), most of the techniques
 here will apply to string problems.
 
+* **[Two Pointers](../techniques/twoPointers.md)**: General version of sliding window, can be on different arrays.
 * **Sliding Window:** Useful for subarray/substring problems, ensuring each value is visited at most twice.
-* **Two Pointers**: General version of sliding window, can be on different arrays.
 * **Prefix Sum**: Useful for range sum queries.
 * **Fast and Slow Pointers**: Useful for finding cycles or middle of the linked list.
 * **Traversing from the Right**: Sometimes useful to traverse from the right instead of the left.
