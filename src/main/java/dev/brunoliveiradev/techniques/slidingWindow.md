@@ -21,8 +21,6 @@ determining the longest sequence that satisfies a condition.
 - **Optimal/efficient solutions**: When a brute-force approach involves nested loops, and a linear time solution is
   desired.
 
-## Types of Problems Solved with Sliding Window:
-
 ## Types of Problems Solved with Sliding Window
 
 1. **Fixed Window Size**: Find the maximum/minimum sum or average for subarrays of fixed size `k`.
