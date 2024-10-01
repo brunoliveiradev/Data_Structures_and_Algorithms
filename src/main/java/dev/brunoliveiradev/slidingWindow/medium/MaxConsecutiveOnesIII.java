@@ -25,36 +25,33 @@ public class MaxConsecutiveOnesIII {
     }
 
     /**
-     * Given a binary array nums and an integer k, return the maximum number of consecutive 1's
-     * in the array if you can flip at most k 0's.
+     * Given a binary array `nums` and an integer `k`, this method returns the maximum number of consecutive 1's
+     * in the array if you can flip at most `k` 0's.
      *
      * @param nums int[] binary array
-     * @param k    int maximum number of consecutive 1's.
-     * @return maximum number of consecutive 1's.
-     * @apiNote Time Complexity: O(n) | Space Complexity: O(1) -
-     * where n is the number of elements in the array
+     * @param k    int maximum number of 0's that can be flipped
+     * @return int maximum number of consecutive 1's
+     * @apiNote Time Complexity: O(n) | Space Complexity: O(1) - where n is the number of elements in the array
      */
     public static int longestOnes(int[] nums, int k) {
-        int currentZeros = 0;
-        int left = 0;
-        int answer = 0;
+        int left = 0, max = 0;
 
-        for (int right = 0; right < nums.length; right++) {
-            if (nums[right] == 0) {
-                currentZeros++;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                k--;
             }
 
-            // check if the constraints is broken, then remove elements and increment left
-            while ((left <= right) && currentZeros > k) {
+            // If k becomes negative, it means we have more than the allowed number of 0s in the window.
+            // Increment the left pointer to move the window forward until k is non-negative again.
+            // (If we use a while k < 0 we will shrink the window instead of moving forward)
+            if (k < 0) {
                 if (nums[left] == 0) {
-                    currentZeros--;
+                    k++;
                 }
                 left++;
             }
-
-            // keep track of the maximum number of consecutive elements. right - left + 1 = size of the window/subarray
-            answer = Math.max(answer, right - left + 1);
+            max = Math.max(max, (i - left + 1));
         }
-        return answer;
+        return max;
     }
 }
