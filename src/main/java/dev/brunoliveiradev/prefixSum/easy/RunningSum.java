@@ -6,26 +6,16 @@ import java.util.Scanner;
 public class RunningSum {
 
     /**
-     * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i])
+     * Given an array nums, this method calculates the running sum of the array.
+     * The running sum is defined as runningSum[i] = sum(nums[0]…nums[i]).
      *
-     * @param nums - int nums
-     * @return int - the running sum of num
-     * @apiNote Time and Space Complexity: O(N) - where N is the length of the input array
+     * @param nums an array of integers
+     * @return an array of integers representing the running sum
+     * @implNote Time Complexity: O(N) - where N is the length of the input array
+     * @implNote Space Complexity: O(1) - in-place modification of the input array
      */
-    private static int[] runningSum(int[] nums) {
-        int[] results = new int[nums.length];
-        results[0] = nums[0];
-
+    public static int[] runningSum(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
-            results[i] = nums[i] + results[i - 1];
-        }
-        return results;
-    }
-
-    // Time complexity: O(n) | Space complexity O(1) - where n is the length of the input array.
-    private static int[] runningSumOptimized(int[] nums) {
-        for (int i = 1; i < nums.length; i++) {
-            // increase nums[i] by the previous index's running sum. Which is stored at index i - 1.
             nums[i] += nums[i - 1];
         }
         return nums;
