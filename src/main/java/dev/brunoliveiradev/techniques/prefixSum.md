@@ -67,18 +67,21 @@ public static int sumRange(int[] prefix, int i, int j) {
 
 ```java
 public boolean[] answerQueries(int[] nums, int[][] queries, int limit) {
-    boolean[] answer = new boolean[queries.length];
-    int[] prefix = buildPrefixSum(nums);
+    int[] prefix = new int[nums.length];
+    prefix[0] = nums[0];
 
-    for (int i = 0; i < queries.length; i++) {
-        int x = queries[i][0], y = queries[i][1];
-
-        int current = sumRange(prefix, x, y);
-
-        answer[i] = current < limit;
+    for (int i = 1; i < nums.length; i++) {
+        prefix[i] = prefix[i - 1] + nums[i];
     }
 
-    return answer;
+    boolean[] ans = new boolean[queries.length];
+    for (int i = 0; i < queries.length; i++) {
+        int x = queries[i][0], y = queries[i][1];
+        int curr = prefix[y] - prefix[x] + nums[x];
+        ans[i] = curr < limit;
+    }
+
+    return ans;
 }
 ```
 
