@@ -30,15 +30,20 @@ public class MinStartValue {
      * @apiNote Space Complexity: O(1) | Time Complexity: O(n), where n is the length of the input array
      */
     public static int minStartValue(int[] nums) {
-        int minValue = 0;
-        int total = 0;
+        int sum = 0; // Current cumulative sum of the array elements
+        int minSum = 0; // Minimum cumulative sum encountered
 
         for (int num : nums) {
-            total += num;
-            minValue = Math.min(minValue, total);
+            sum += num;
+
+            // Update minSum if the current cumulative sum is less than minSum
+            minSum = Math.min(minSum, sum);
         }
 
-        return 1 - minValue;
+        // Calculate the minimum start value to ensure the step-by-step sum is never less than 1
+        // If minSum is negative, we need at least 1 - minSum to make the sum positive
+        // If minSum is non-negative, we need at least 1
+        return 1 - minSum;
     }
 
 }
