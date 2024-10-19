@@ -6,12 +6,23 @@ package dev.brunoliveiradev.prefixSum.medium;
 public class KRadiusSubarrayAverages {
 
     /**
-     * Calculates the k-radius averages for a given array.
+     * Calculates the k-radius averages for a given array using the prefix sum technique.
+     * <p>
+     * A k-radius average is the average of the elements within a subarray centered at index i,
+     * spanning from index i-k to i+k (inclusive). If there are fewer than k elements before
+     * or after the index i, the result for that index is set to -1.
+     * <p>
+     * The function uses a prefix sum array to efficiently calculate the sum of each subarray
+     * in constant time, avoiding the need to repeatedly sum overlapping subarrays.
+     * <p>
+     * Time complexity: O(n), where n is the length of the array. We compute the prefix sum in O(n)
+     * and use it to calculate each k-radius average in constant time.
+     * <p>
+     * Space complexity: O(n), as we store the prefix sum array of size n+1 and the result array of size n.
      *
-     * @param nums 0-indexed array of integers
-     * @param k    integer k, radius average parameter
-     * @return an array of integers where each element is the k-radius average for the corresponding subarray centered at that index
-     * @apiNote Time and Space complexity: O(n) - where n is the number of elements in the nums array
+     * @param nums the input array of integers
+     * @param k    the radius for the subarray around each index
+     * @return an array of k-radius averages, or -1 where the average cannot be calculated
      */
     public static int[] getAverages(int[] nums, int k) {
         int n = nums.length;
@@ -29,25 +40,24 @@ public class KRadiusSubarrayAverages {
             return averages;
         }
 
-        // Calculate the prefix sum efficiently (sliding window sum)
-        long prefixSum = 0;
-        // Initially, set all elements to -1 where the average cannot be calculated
+        // Calculate the prefix sum array where prefix[i] is the sum of elements from index 0 to i-1
+        long[] prefixSum = new long[n + 1];  // n+1 to handle the 0-based index
         for (int i = 0; i < n; i++) {
+            prefixSum[i + 1] = prefixSum[i] + nums[i];
+        }
+
+        // Now, calculate the averages using the prefix sum array
+        for (int i = k; i < n - k; i++) {
+            long sum = prefixSum[i + k + 1] - prefixSum[i - k];  // sum of subarray from (i-k) to (i+k)
+            averages[i] = (int) (sum / (2 * k + 1));  // Calculate the average
+        }
+
+        // Set the boundaries where the average cannot be calculated to -1
+        for (int i = 0; i < k; i++) {
             averages[i] = -1;
         }
-
-        // Sum the first (2*k + 1) elements that can form an average
-        for (int i = 0; i < 2 * k + 1; i++) {
-            prefixSum += nums[i];
-        }
-
-        // Now, process from index k to n - k - 1
-        for (int i = k; i < n - k; i++) {
-            if (i != k) {
-                // Update the sliding window sum by removing the oldest value and adding the new one
-                prefixSum = prefixSum - nums[i - k - 1] + nums[i + k];
-            }
-            averages[i] = (int) (prefixSum / (2 * k + 1));
+        for (int i = n - k; i < n; i++) {
+            averages[i] = -1;
         }
 
         return averages;
