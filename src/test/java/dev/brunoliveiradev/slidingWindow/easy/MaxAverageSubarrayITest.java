@@ -1,8 +1,9 @@
 package dev.brunoliveiradev.slidingWindow.easy;
 
+import dev.brunoliveiradev.arraysAndStrings.slidingWindow.easy.MaxAverageSubarrayI;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MaxAverageSubarrayITest {
 

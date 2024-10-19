@@ -1,8 +1,9 @@
 package dev.brunoliveiradev.slidingWindow.medium;
 
+import dev.brunoliveiradev.arraysAndStrings.slidingWindow.medium.MaxConsecutiveOnesIII;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MaxConsecutiveOnesIIITest {
 

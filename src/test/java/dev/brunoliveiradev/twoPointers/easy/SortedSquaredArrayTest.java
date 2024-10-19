@@ -1,8 +1,9 @@
 package dev.brunoliveiradev.twoPointers.easy;
 
+import dev.brunoliveiradev.arraysAndStrings.twoPointers.SortedSquaredArray;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SortedSquaredArrayTest {
 

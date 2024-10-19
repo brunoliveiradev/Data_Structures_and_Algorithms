@@ -2,40 +2,39 @@
 
 Welcome to my repository of coding challenges and problems, where I've gathered a diverse collection of brain-teasers
 from various sources!
-As a passionate Java developer, I've meticulously solved each problem using innovative approaches that I'll be excited
+As a passionate software engineer, I've meticulously solved each problem using innovative approaches that I'll be
+excited
 to share with you.
 
-To help you navigate through this treasure trove, I've organized the challenges and problems by their solution approach
-and difficulty levels. And as a cherry on top, each solution comes with a concise description of the problem and my
+To help you navigate through this treasure trove, I've organized the challenges and problems by their solution approach.
+And as a cherry on top, each solution comes with a concise description of the problem and my
 creative thought process in solving it.
 
 **Keep in mind that this repository is a work in progress**, and I'm constantly adding new challenges to it. So, be sure
-to stay tuned and come back often for fresh and exciting brain-teasers!
+to stay tuned and come back often for fresh and exciting challenges!
 
 Bellow you will find:
 <!-- TOC -->
-
-* [Solutions by Approach Category](#solutions-by-approach-category)
-* [License](#license)
-* [Contribution](#contribution)
-* [Main Sources](#main-sources)
-* [Disclaimer](#disclaimer)
-
+* [Data Structures and Algorithms](#data-structures-and-algorithms)
+  * [Solutions by Approach Category](#solutions-by-approach-category)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Main Sources](#main-sources)
+  * [Disclaimer](#disclaimer)
 <!-- TOC -->
 
 ## Solutions by Approach Category
 
-| Approach Category | Link to Package Path                                                                                                                                                     | Level  |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| Techniques        | [**All Techniques explained with examples**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques) | All    |
-| Algorithms        | [**Algorithms**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/easy)                                   | Easy   |
-| Hashing           | [**Hashing**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing/easy)                              | Easy   |
-| Hashing           | [**Hashing**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing/medium)                            | Medium |
-| Prefix Sum        | [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/prefixSum/easy)                         | Easy   |
-| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                 | Easy   |
-| Sliding Window    | [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/medium)               | Medium |
-| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/easy)                   | Easy   |
-| Two Pointers      | [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/slidingWindow/medium)                 | Medium |
+The following table organizes the challenges and problems by their solution approach and difficulty level:
+
+| Approach Category                                                                                                                                                    | Level           |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+| [**Techniques with Examples**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques)           | All             |
+| [**Algorithms**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/easyAlgorithms)    | Easy            |
+| [**Hashing**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing)                               | Easy and Medium |
+| [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/prefixSum)         | Easy and Medium |
+| [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/slidingWindow) | Easy and Medium |
+| [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/twoPointers)     | Easy            |
 
 ## License
 
@@ -43,8 +42,10 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 ## Contribution
 
-If you want to contribute to this repository, please fork the repository, make your changes, and submit a pull request.
-I will review the pull request and merge it if it meets the standards of the repository.
+If you want to contribute to this repository, please fork the repository, make your changes, and submit a pull
+request.  
+I will review the pull request and merge it if it meets the standards of the repository.  
+Feel free to open an issue for suggestions or bug reports.
 
 ## Main Sources
 
@@ -52,11 +53,13 @@ I will review the pull request and merge it if it meets the standards of the rep
 
 <br>
 
-##### Disclaimer:
+## Disclaimer
 
-<span style="color:black"> This repository is purely academic and intended for educational purposes only. 
-The solutions provided in this repository are not intended to be used in production systems or as a substitute for professional advice. 
-The content here is not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any of the organizations mentioned or
+This repository is purely academic and intended for educational purposes only.
+The solutions provided in this repository are not intended to be used in production systems or as a substitute for
+professional advice.
+The content here is not endorsed by, directly affiliated with, maintained, authorized, or sponsored by any of the
+organizations mentioned or
 their affiliates such as LeetCode, AlgoExpert, and HackerRank. All product and company names are the registered
 trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes
-only and does not imply any association with the trademark holder or with their product brand. </span>
+only and does not imply any association with the trademark holder or with their product brand. 

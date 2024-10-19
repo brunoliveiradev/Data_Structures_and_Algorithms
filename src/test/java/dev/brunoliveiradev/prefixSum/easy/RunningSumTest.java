@@ -1,8 +1,9 @@
 package dev.brunoliveiradev.prefixSum.easy;
 
+import dev.brunoliveiradev.arraysAndStrings.prefixSum.easy.RunningSum;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class RunningSumTest {
 

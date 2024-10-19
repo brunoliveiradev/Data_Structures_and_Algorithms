@@ -1,5 +1,6 @@
 package dev.brunoliveiradev.prefixSum.medium;
 
+import dev.brunoliveiradev.arraysAndStrings.prefixSum.medium.KRadiusSubarrayAverages;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
