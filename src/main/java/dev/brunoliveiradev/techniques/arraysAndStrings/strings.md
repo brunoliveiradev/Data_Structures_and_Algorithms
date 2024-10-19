@@ -26,17 +26,38 @@
 
 ### String vs StringBuilder (Java)
 
+In Java, strings are immutable, meaning that once a string is created, it cannot be changed. Each time a string is
+modified, such as during concatenation, a new string is created, which can lead to increased memory usage and time
+complexity.
+To handle strings efficiently in Java, especially when performing multiple concatenations, use the `StringBuilder`
+class.
+
 **String:**
 
-- Immutable.
+- Immutable: Ensure thread safety and predictability.
 - Operations like concatenation create new strings.
 - Suitable for fixed or small number of modifications.
 
 **StringBuilder:**
 
-- Mutable.
+- Mutable: Ideal for situations requiring multiple modifications.
+    - `StringBuilder` is mutable, allowing changes without creating new objects, which results in better performance.
 - Efficient for multiple modifications.
 - Use `append()` for concatenation.
+- **Time Complexity:** Appending to a `StringBuilder` is an `O(1)` operation most of the time, making it much more
+  efficient than repeatedly concatenating immutable `String` objects (`O(n^2)` in some cases).
+- **Memory Management:** Using `StringBuilder` avoids unnecessary creation of intermediate strings, reducing memory
+  overhead.
+
+```java
+public String buildString(String s) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < s.length(); i++) {
+        sb.append(s.charAt(i));
+    }
+    return sb.toString(); // O(n) time complexity overall.
+}
+```
 
 -----------------------
 
