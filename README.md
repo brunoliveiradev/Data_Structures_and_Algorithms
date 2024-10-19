@@ -21,16 +21,17 @@ Bellow you will find:
 
 ## Solutions by Approach Category
 
-The following table organizes the challenges and problems by their solution approach and difficulty level:
+The following table organizes the challenges and problems by their solution approach, difficulty level, and related data structures:
 
-| Approach Category                                                                                                                                                    | Level           |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| [**Techniques with Examples**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques)           | All             |
-| [**Algorithms**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/easyAlgorithms)    | Easy            |
-| [**Hashing**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing)                               | Easy and Medium |
-| [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/prefixSum)         | Easy and Medium |
-| [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/slidingWindow) | Easy and Medium |
-| [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/twoPointers)     | Easy            |
+| Approach Category                                                                                                                                                                           | Level           | Data Structure    |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------|
+| [**All Techniques**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques)                                            | All             | Mixed             |
+| [**Arrays and String Most Common Techniques**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/techniques/arraysAndStrings) | All             | Arrays, Strings   |
+| [**Two Pointers**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/twoPointers)                            | Easy            | Arrays, Strings   |
+| [**Sliding Window**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/slidingWindow)                        | Easy and Medium | Arrays, Strings   |
+| [**Prefix Sum**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/arraysAndStrings/prefixSum)                                | Easy and Medium | Arrays, Strings   |
+| [**Hashing**](https://github.com/brunoliveiradev/Data_Structures_and_Algorithms/blob/master/src/main/java/dev/brunoliveiradev/hashing)                                                      | Easy and Medium | Hash Maps, Arrays |
+
 
 ## License
 
