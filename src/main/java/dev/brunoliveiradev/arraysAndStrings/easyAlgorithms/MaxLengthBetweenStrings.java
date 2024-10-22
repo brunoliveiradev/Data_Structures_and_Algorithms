@@ -36,7 +36,7 @@ public class MaxLengthBetweenStrings {
      * @param str2 String input
      * @return maxLengthCombined
      */
-    static int getMaxLengthCombined(String str1, String str2) {
+    public static int getMaxLengthCombined(String str1, String str2) {
         String combined = str1 + str2;
         System.out.println("Maximum length of the combined string is: " + combined.length());
         return combined.length();
@@ -49,7 +49,7 @@ public class MaxLengthBetweenStrings {
      * @param str2 String
      * @return maxLength - int
      */
-    static int getMaxLengthBetween(String str1, String str2) {
+    public static int getMaxLengthBetween(String str1, String str2) {
         int lengthStr1 = str1.length();
         int lengthStr2 = str2.length();
         System.out.println("Maximum length between the two strings is: " + Math.max(lengthStr1, lengthStr2));
