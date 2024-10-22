@@ -21,37 +21,35 @@ public class ReverseWordsIII {
      *          or trailing spaces, and contais printable ASCII characters.
      *          All the words in s are separated by a single space.
      * @return String with reversed words.
-     * @apiNote Time complexity: O(N) | Space complexity O(1) |
-     * Solved using TwoPointers approach. Finding the starting and ending position
-     * of each word in the string. For each identified word, reverse the characters
-     * of the word one by one.
+     * @apiNote Time complexity: O(N), where N is the length of the string.
+     * Space complexity: O(N) due to the character array used for manipulation.
      */
     public static String reverseWords(String s) {
         if (s.length() == 1) return s;
 
         char[] chArray = s.toCharArray();
-        int lastSpaceIndex = -1;
         int len = s.length();
+        int wordStartIndex = 0;
 
         for (int i = 0; i <= len; i++) {
-            if (i == len || chArray[i] == ' ') {
-                int startIndex = lastSpaceIndex + 1;
-                int endIndex = i - 1;
+            boolean isEndOfWord = (i == len || chArray[i] == ' ');
 
-                reverse(chArray, startIndex, endIndex);
-                lastSpaceIndex = i;
+            if (isEndOfWord) {
+                int wordEndIndex = i - 1;
+                reverseWord(chArray, wordStartIndex, wordEndIndex);
+                wordStartIndex = i + 1;
             }
         }
         return new String(chArray);
     }
 
-    private static void reverse(char[] chars, int left, int right) {
-        while (left < right) {
-            char temp = chars[left];
-            chars[left] = chars[right];
-            chars[right] = temp;
-            left++;
-            right--;
+    private static void reverseWord(char[] characters, int startIndex, int endIndex) {
+        while (startIndex < endIndex) {
+            char temp = characters[startIndex];
+            characters[startIndex] = characters[endIndex];
+            characters[endIndex] = temp;
+            startIndex++;
+            endIndex--;
         }
     }
 }
