@@ -13,7 +13,7 @@ public class ReversePrefixWord {
         System.out.println("Enter a character:");
         char ch = scanner.nextLine().charAt(0);
 
-        String result = reversePrefix(word, ch);
+        String result = ReversePrefix(word, ch);
         System.out.println("Result: " + result);
 
         scanner.close();
@@ -30,7 +30,7 @@ public class ReversePrefixWord {
      * @apiNote Time complexity: O(n) | Space complexity O(1) - where n is the length of word
      * @implNote This method use two-pointers approach
      */
-    private static String reversePrefix(String word, char ch) {
+    public static String ReversePrefix(String word, char ch) {
         if (word.length() == 1) return word;
 
         int left = 0;
