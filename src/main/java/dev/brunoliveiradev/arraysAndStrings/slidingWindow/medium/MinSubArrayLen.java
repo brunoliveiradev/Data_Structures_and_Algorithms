@@ -15,22 +15,21 @@ public class MinSubArrayLen {
      * @implNote Solved using Sliding Window approach - similiar to Two Pointers.
      */
     public static int minSubArrayLen(int target, int[] nums) {
-        // Let's use an integer 'window' that tracks the sum of the current window.
+        // Let's use an integer 'sumOfCurrentWindow' that tracks the sum of the current window.
         int left = 0;
-        int window = 0;
+        int sumOfCurrentWindow = 0;
         int minLength = Integer.MAX_VALUE;
 
         // At each number, will add the number to the current window's sum
         for (int right = 0; right < nums.length; right++) {
-            window += nums[right];
+            sumOfCurrentWindow = sumOfCurrentWindow + nums[right];
 
             // While the window exceeds the target, descrease the window by removing the elements from the left
-            while(window >= target) {
+            while(sumOfCurrentWindow >= target) {
                 // Given a subarray starting at left and ending at right, the length is: right - left + 1
-                int length = right - left + 1;
-                minLength = Math.min(minLength, length);
+                minLength = Math.min(minLength, right - left + 1);
 
-                window -= nums[left];
+                sumOfCurrentWindow = sumOfCurrentWindow - nums[left];
                 left++;
             }
         }
