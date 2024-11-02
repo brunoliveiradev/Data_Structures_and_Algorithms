@@ -10,23 +10,25 @@ public class MaxVowelsInSubString {
      * @param s String input that consists of lowercase English letters.
      * @param k int argument that represent the window size
      * @return int - Maximum Number of Vowels in a Substring of Given Length
-     * @apiNote Time Complexity: O(n) | Space Complexity: O(1)
+     * @apiNote Time Complexity: O(n), where n is the length of the string s.
+     * Space Complexity: O(1), as the space used is constant.
+     * Solved using sliding window technique.
      */
     public static int maxVowels(String s, int k) {
-        int vowel = 0;
+        //
+        int vowelCount = 0;
         int maxVowels = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            //vowel is like the size of the window
             if (isVowel(s.charAt(i))) {
-                vowel++;
+                vowelCount++;
             }
             // if constraint is broken (i >= k), the function checks if the character at the left end of the window is a vowel
-            // If so, the variable vowel is decremented by one to account for the removal of that character from the window.
+            // If so, the variable vowelCount is decremented by one to account for the removal of that character from the window.
             if (i >= k && isVowel(s.charAt(i - k))) {
-                vowel--;
+                vowelCount--;
             }
-            maxVowels = Math.max(maxVowels, vowel);
+            maxVowels = Math.max(maxVowels, vowelCount);
         }
         return maxVowels;
     }
