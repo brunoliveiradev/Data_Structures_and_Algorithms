@@ -9,10 +9,10 @@ public class MoveZeroes {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the lenght of the array: ");
-        int lenght = Integer.parseInt(sc.next().trim());
+        System.out.print("Enter the length of the array: ");
+        int length = Integer.parseInt(sc.next().trim());
 
-        int[] array = new int[lenght];
+        int[] array = new int[length];
         for (int i = 0; i < array.length; i++) {
             System.out.println("Enter the " + i + "th element: ");
             array[i] = Integer.parseInt(sc.next().trim());
@@ -51,7 +51,8 @@ public class MoveZeroes {
     }
 
     /**
-     * Moves the zeroes to the last positions in the array
+     * Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+     * Must do this in-place without making a copy of the array.
      *
      * @param nums int array
      * @apiNote Time Complexity: O(n) - where n is the length of the input array nums
