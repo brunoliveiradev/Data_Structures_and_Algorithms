@@ -5,7 +5,7 @@ data, such as arrays or strings, in an optimized manner. It involves the use of 
 different positions and move in different directions.
 The Two Pointers technique is widely used because it allows solving problems in linear time, avoiding more costly
 approaches like O(n²).
-
+ 
 ## How It Works:
 
 - Typically, you use two pointers named **left** and **right**.
@@ -13,6 +13,13 @@ approaches like O(n²).
   both at the start.
 - The idea is to move one or both pointers in each step, usually with the goal of reducing or expanding the "window"
   they represent until a condition is satisfied.
+
+## When to Use Two Pointers:
+
+- When you need to compare or operate on pairs of elements in a sequence and you can exploit some ordering.
+- When you can move the pointers inward based on conditions, often searching for an exact match or optimizing something minimal or maximal. 
+- Not strictly about contiguous sequences, as in the Sliding Window technique, but more about comparing or operating on pairs of elements.
+- Can jump pointers in non-symmetric ways (sometimes you move only the right pointer, sometimes only the left, sometimes both).
 
 ## Types of Problems Solved with Two Pointers:
 
