@@ -1,5 +1,6 @@
 package dev.brunoliveiradev.twoPointers.easy;
 
+import dev.brunoliveiradev.arraysAndStrings.twoPointers.PalindromeNumber;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

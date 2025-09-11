@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.twoPointers.easy;
+package dev.brunoliveiradev.arraysAndStrings.twoPointers;
 
 public class PalindromeNumber {
 
