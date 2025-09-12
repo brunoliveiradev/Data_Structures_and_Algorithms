@@ -1,5 +1,6 @@
 package dev.brunoliveiradev.easyAlgorithms;
 
+import dev.brunoliveiradev.arraysAndStrings.strings.MergeAlternatelyStrings;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

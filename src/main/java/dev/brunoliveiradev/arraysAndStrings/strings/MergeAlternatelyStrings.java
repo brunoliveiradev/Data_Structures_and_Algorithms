@@ -1,4 +1,4 @@
-package dev.brunoliveiradev.easyAlgorithms;
+package dev.brunoliveiradev.arraysAndStrings.strings;
 
 public class MergeAlternatelyStrings {
 
