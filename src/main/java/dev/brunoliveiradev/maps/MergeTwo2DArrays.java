@@ -1,7 +1,9 @@
 package dev.brunoliveiradev.maps;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MergeTwo2DArrays {
 
@@ -59,6 +61,14 @@ public class MergeTwo2DArrays {
             startIndex++;
         }
     }
+
+    // IF instead of int[][] was Map<Integer, Integer>.
+    static Map<Integer, Integer> mergeSum(Map<Integer, Integer> a, Map<Integer, Integer> b) {
+        Map<Integer, Integer> out = new HashMap<>(a);          // não muta 'a'
+        b.forEach((k, v) -> out.merge(k, v, Integer::sum));    // se existir, soma; senão, insere
+        return out;
+    }
+
 
 
 }
