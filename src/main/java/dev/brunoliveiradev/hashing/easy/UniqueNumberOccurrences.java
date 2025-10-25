@@ -45,11 +45,10 @@ public class UniqueNumberOccurrences {
         return freq.size() == freqSet.size();
     }
 
-
     public static void main(String[] args) {
-        System.out.println(uniqueOccurrences(new int[] {1,2,2,1,1,3}));  // Expected output: true
-        System.out.println(uniqueOccurrences(new int[] {1,2}));  // Expected output: false
-        System.out.println(isValueUniques(new int[] {-3,0,1,-3,1,1,1,-3,10,0}));  // Expected output: true
+        System.out.println(uniqueOccurrences(new int[]{1, 2, 2, 1, 1, 3}));  // Expected output: true
+        System.out.println(uniqueOccurrences(new int[]{1, 2}));  // Expected output: false
+        System.out.println(isValueUniques(new int[]{-3, 0, 1, -3, 1, 1, 1, -3, 10, 0}));  // Expected output: true
     }
 
 }
